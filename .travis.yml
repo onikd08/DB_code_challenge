@@ -5,7 +5,6 @@ python: 3
 # command to install dependencies
 install:
   - pip install flask
-  - pip install .
 
 script: 
   - python test.py
