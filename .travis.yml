@@ -1,0 +1,18 @@
+language: python
+
+python: 3.8.2
+
+install:
+    - pip install flask
+
+
+
+
+deploy:
+  github-token: $GITHUB_TOKEN
+  provider: heroku
+  api_key:
+    secure: X5jEUDbzBX3Yeqx1OXmt4ztNswbvbja21QdLpGMSswg06NhwVFTFEgnbu9DjBxauEVlhYJWFqHcDk2q1QbZ/RB4U8q4jvoKxmFFNyX4Qev9cgWxbew6oyLz/KnxdRmqeeZS8eOxdkWk5TzCGoaGzypAml3idhUomlBitQIYd08XI75soDq24PDnR2YKrf8xs5KtNF/mpvlFkT0OnS9KveYnJyPacd2JOZ+d59u4EjEBFCKC2QSpXOS6SelJZxpGaN9q0shbDnLUlpSDW+clfkHLYDAR7glU+s/Xo+PKOwrSWcCULr+yv+9e0qBj4tzCNd/dqYN4FlcXiG7JosAxnSGSstOD4mMyFiagD0rw/V0fk4W+JcnlM7UgMRX7i/nqzJDu1b+OMXb1LQWK0w+alP50ifjC2rViVRmoMY0xDNW5y30Esn2PCQettO57uyQwzONFRxecvV0PhvkXwxzIHxNFtOmKeWN9pMecvNEWzdrcg3cOrK5MxT2dPFVqMaJwuoIfBeJtGVxh+t6SPMTWUy/UWl5LaN7iX3bbuLbpu94Zb3Komb2hiwTLkVBGKHVRDGLEEcbUSCuWEGml8lq+cZQp8lVXaMROcuyIzprABpfV2Y4a2RnAuzqkt3vKlUUezW4p8Yqkl7PObkXZ+EVcQVl2IkcBA7sgSrtbnAKDWrfY=
+  app: DB_code_challenge
+  on:
+    repo: onikd08/DB_code_challenge
