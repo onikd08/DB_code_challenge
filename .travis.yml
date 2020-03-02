@@ -7,6 +7,6 @@ install:
     - pip install flask
 
 script:
-    - curl.sh
+    - script curl.sh
 
 
