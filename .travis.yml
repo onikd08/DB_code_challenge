@@ -6,8 +6,4 @@ python: 3.8.2
 install:
     - pip install flask
 
-deploy:
-    provider: script
-    script:  bash scripts/curl.sh
-    on:
-        branch:  master
+
