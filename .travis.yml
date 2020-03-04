@@ -6,4 +6,7 @@ install:
     - pip install flask
     - pip install curl
 
+script:
+    - echo "Successful"
+
 
