@@ -1,4 +1,4 @@
-sudo: false
+os: osx
 language: python
 
 python: 3.8.2
@@ -8,5 +8,3 @@ install:
     - pip install curl
 
 curl -i -H "Content-Type: application/json" -X POST -d '{"text":"hello 2 times  "}' https://git.heroku.com/dbcodechallange.git
-
-
