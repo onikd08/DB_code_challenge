@@ -4,10 +4,10 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 app.config['JSON_SORT_KEYS'] = False
-@app.route('/analyze/test', methods=['POST'])
+@app.route('/analyze', methods=['POST'])
     
 
-def posti():
+def post():
     
     new_task = {'text': request.json['text']}   
     text = (str(new_task.get('text')))
@@ -50,4 +50,4 @@ if __name__ == "__main__":
     
 
 
-# curl -i -H "Content-Type: application/json" -X POST -d '{"text":"hello 2 times  "}' http://localhost:5000//analyze/test
+# curl -i -H "Content-Type: application/json" -X POST -d '{"text":"hello 2 times  "}' http://localhost:5000//analyze
