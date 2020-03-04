@@ -6,4 +6,4 @@ install:
     - pip install flask
     - pip install curl
 
-curl -i -H "Content-Type: application/json" -X POST -d '{"text":"hello 2 times  "}' http://127.0.0.1:5000/analyze/test
+
