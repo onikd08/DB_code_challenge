@@ -1,4 +1,4 @@
- 
+import string
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
@@ -30,9 +30,8 @@ def posti():
     total_words = len(counted_words)
     
     ch_list = list(text.lower())
-    english_letters = []
-    for ch in range(97 ,123):
-        english_letters.append(chr(ch))
+    english_letters = list(string.ascii_lowercase)
+
     new_ch_list = sorted([ch for ch in ch_list if ch in english_letters])
     ch_dict = {}
     for i in new_ch_list:
